@@ -1,0 +1,16 @@
+{
+	"$path": "modules.keyRegistry",
+	"keyRegistry": "Keys Registry",
+	"welcome": "Welcome to the Keys Registry. Here you can find all types of keys for our services.",
+	"keyTypes": "Key Types",
+	"keyTypeRegistry": "{key} Keys Registry",
+	"welcomeTypeRegistry": "Registry for {key} keys. Here you can find all keys used in our services.",
+	"keyTypeInfo": "Key Types",
+	"publicKeyFor": "Public Key for {keyName}",
+	"keyId": "Key ID: {keyId}",
+	"copyKey": "Copy Key",
+	"downloadKey": "Download {keyName}",
+	"viewOnKeyServer": "View on Key Server",
+	"copiedToClipboard": "Key copied to clipboard",
+	"failedToCopy": "Failed to copy key"
+}
