@@ -2,7 +2,7 @@
 to: src/routes/[[lang]]/keys/+page.svelte
 ---
 <script lang="ts">
-	import { LL } from '$lang/i18n-svelte';
+	import { LL } from '$lib/helpers/i18n';
 	const keys = ['gpg', 'oric'];
 </script>
 

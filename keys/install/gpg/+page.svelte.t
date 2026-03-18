@@ -6,8 +6,8 @@ to: src/routes/[[lang]]/keys/gpg/+page.svelte
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
 	import { copyToClipboard, downloadGPGKey } from '$lib/helpers/keys';
-	import { LL } from '$lang/i18n-svelte';
-	import { keys } from './keys.data';
+	import { LL } from '$lib/helpers/i18n';
+	import { keys } from '$data/keys.gpg';
 
 	const hash = $derived($page.url.hash.slice(1) || '');
 	const selectedKeyName = $derived(decodeURIComponent(hash).toLowerCase() || null);
