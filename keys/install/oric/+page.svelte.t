@@ -2,10 +2,10 @@
 to: src/routes/[[lang]]/keys/oric/+page.svelte
 ---
 <script lang="ts">
-	import { keys } from './keys.data';
+	import { keys } from '$data/keys.oric';
 
 	import { page } from '$app/stores';
-	import { LL } from '$lang/i18n-svelte';
+	import { LL } from '$lib/helpers/i18n';
 	// Get the last part of the URL path (after the last /)
 	$: lastPathSegment = $page.url.pathname.split('/').filter(Boolean).pop() || '';
 </script>
