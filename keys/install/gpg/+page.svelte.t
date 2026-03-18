@@ -2,7 +2,7 @@
 to: src/routes/[[lang]]/keys/gpg/+page.svelte
 ---
 <script lang="ts">
-	import { Copy, Download, ArrowUpRight, ArrowLeft } from 'lucide-svelte';
+	import { Copy, Download, ArrowUpRight } from 'lucide-svelte';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
 	import { copyToClipboard, downloadGPGKey } from '$lib/helpers/keys';
