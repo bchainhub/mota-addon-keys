@@ -1,0 +1,16 @@
+{
+	"$path": "modules.keyRegistry",
+	"keyRegistry": "ทะเบียนคีย์",
+	"welcome": "ยินดีต้อนรับสู่ทะเบียนคีย์ ที่นี่คุณจะพบประเภทคีย์ทั้งหมดสำหรับบริการของเรา",
+	"keyTypes": "ประเภทคีย์",
+	"keyTypeRegistry": "ทะเบียนคีย์ {key}",
+	"welcomeTypeRegistry": "ทะเบียนสำหรับคีย์ {key} ที่นี่มีคีย์ทั้งหมดที่ใช้ในบริการของเรา",
+	"keyTypeInfo": "ประเภทคีย์",
+	"publicKeyFor": "คีย์สาธารณะสำหรับ {keyName}",
+	"keyId": "รหัสคีย์: {keyId}",
+	"copyKey": "คัดลอกคีย์",
+	"downloadKey": "ดาวน์โหลด {keyName}",
+	"viewOnKeyServer": "ดูบนเซิร์ฟเวอร์คีย์",
+	"copiedToClipboard": "คัดลอกคีย์ไปยังคลิปบอร์ดแล้ว",
+	"failedToCopy": "คัดลอกคีย์ไม่สำเร็จ"
+}
