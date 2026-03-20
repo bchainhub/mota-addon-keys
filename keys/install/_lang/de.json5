@@ -1,0 +1,16 @@
+{
+	"$path": "modules.keyRegistry",
+	"keyRegistry": "Schlüsselregister",
+	"welcome": "Willkommen im Schlüsselregister. Hier finden Sie alle Schlüsseltypen für unsere Dienste.",
+	"keyTypes": "Schlüsseltypen",
+	"keyTypeRegistry": "{key}-Schlüsselregister",
+	"welcomeTypeRegistry": "Register für {key}-Schlüssel. Hier finden Sie alle in unseren Diensten verwendeten Schlüssel.",
+	"keyTypeInfo": "Schlüsseltypen",
+	"publicKeyFor": "Öffentlicher Schlüssel für {keyName}",
+	"keyId": "Schlüssel-ID: {keyId}",
+	"copyKey": "Schlüssel kopieren",
+	"downloadKey": "{keyName} herunterladen",
+	"viewOnKeyServer": "Auf Schlüsselserver anzeigen",
+	"copiedToClipboard": "Schlüssel in die Zwischenablage kopiert",
+	"failedToCopy": "Schlüssel konnte nicht kopiert werden"
+}

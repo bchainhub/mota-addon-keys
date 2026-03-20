@@ -1,0 +1,16 @@
+{
+	"$path": "modules.keyRegistry",
+	"keyRegistry": "キー登録",
+	"welcome": "キー登録へようこそ。当社サービスで使用するすべての種類のキーをこちらでご確認いただけます。",
+	"keyTypes": "キーの種類",
+	"keyTypeRegistry": "{key} キー登録",
+	"welcomeTypeRegistry": "{key} キー用の登録です。当社サービスで使用しているすべてのキーを掲載しています。",
+	"keyTypeInfo": "キーの種類",
+	"publicKeyFor": "{keyName} の公開鍵",
+	"keyId": "キー ID: {keyId}",
+	"copyKey": "キーをコピー",
+	"downloadKey": "{keyName} をダウンロード",
+	"viewOnKeyServer": "キーサーバーで表示",
+	"copiedToClipboard": "キーをクリップボードにコピーしました",
+	"failedToCopy": "キーのコピーに失敗しました"
+}

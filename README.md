@@ -1,6 +1,6 @@
 # Keys registry MOTA addon
 
-Keys registry MOTA addon for SvelteKit projects. Adds a **Keys Registry** route with GPG and ORIC key types: index page, type-specific pages, copy/download, and optional key-server links. Uses [typesafe-i18n](https://github.com/ivanhofer/typesafe-i18n) for translations (en, sk, ru).
+Keys registry MOTA addon for SvelteKit projects. Adds a **Keys Registry** route with GPG and ORIC key types: index page, type-specific pages, copy/download, and optional key-server links. Uses [typesafe-i18n](https://github.com/ivanhofer/typesafe-i18n) for translations: en, sk, ru, de, es, ja, pt-br, th, zh-cn (Simplified Chinese).
 
 **Repository:** [https://github.com/bchainhub/mota-addon-keys](https://github.com/bchainhub/mota-addon-keys)
 
@@ -33,7 +33,7 @@ npx addon bchainhub/mota-addon-keys keys install --dry-run
   - `src/routes/[[lang]]/keys/gpg/keys.data.ts` — Sample GPG key data.
   - `src/routes/[[lang]]/keys/oric/+page.svelte` — ORIC keys page.
   - `src/routes/[[lang]]/keys/oric/keys.data.ts` — Sample ORIC key list.
-- **Translations** — Merged into `src/i18n/en/index.ts`, `src/i18n/sk/index.ts`, `src/i18n/ru/index.ts` under `modules.keyRegistry` (e.g. keyRegistry, welcome, keyTypes, copyKey, downloadKey, …).
+- **Translations** — Merged into `src/i18n/<locale>/index.ts` for each bundled locale (en, sk, ru, de, es, ja, pt-br, th, zh-cn) under `modules.keyRegistry` (e.g. keyRegistry, welcome, keyTypes, copyKey, downloadKey, …).
 
 After install, run your i18n step if needed (e.g. `npx typesafe-i18n --no-watch`).
 
@@ -48,7 +48,7 @@ npx addon bchainhub/mota-addon-keys keys uninstall
 ### What gets removed
 
 - The five route files under `src/routes/[[lang]]/keys/` (index, gpg and oric pages and data files), and empty `keys` directories.
-- The `keyRegistry` block from `modules` in each of `src/i18n/en/index.ts`, `src/i18n/sk/index.ts`, `src/i18n/ru/index.ts`.
+- The `keyRegistry` block from `modules` in each matching `src/i18n/<locale>/index.ts` (same locales as install).
 
 Optional flags (same as install):
 

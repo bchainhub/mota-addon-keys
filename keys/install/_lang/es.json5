@@ -1,0 +1,16 @@
+{
+	"$path": "modules.keyRegistry",
+	"keyRegistry": "Registro de claves",
+	"welcome": "Bienvenido al Registro de claves. Aquí encontrará todos los tipos de claves para nuestros servicios.",
+	"keyTypes": "Tipos de clave",
+	"keyTypeRegistry": "Registro de claves {key}",
+	"welcomeTypeRegistry": "Registro de claves {key}. Aquí encontrará todas las claves usadas en nuestros servicios.",
+	"keyTypeInfo": "Tipos de clave",
+	"publicKeyFor": "Clave pública para {keyName}",
+	"keyId": "ID de clave: {keyId}",
+	"copyKey": "Copiar clave",
+	"downloadKey": "Descargar {keyName}",
+	"viewOnKeyServer": "Ver en el servidor de claves",
+	"copiedToClipboard": "Clave copiada al portapapeles",
+	"failedToCopy": "No se pudo copiar la clave"
+}

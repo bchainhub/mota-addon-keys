@@ -1,0 +1,16 @@
+{
+	"$path": "modules.keyRegistry",
+	"keyRegistry": "密钥注册表",
+	"welcome": "欢迎使用密钥注册表。您可以在此找到我们服务的所有密钥类型。",
+	"keyTypes": "密钥类型",
+	"keyTypeRegistry": "{key} 密钥注册表",
+	"welcomeTypeRegistry": "{key} 密钥注册表。您可以在此找到我们服务中使用的所有密钥。",
+	"keyTypeInfo": "密钥类型",
+	"publicKeyFor": "{keyName} 的公钥",
+	"keyId": "密钥 ID：{keyId}",
+	"copyKey": "复制密钥",
+	"downloadKey": "下载 {keyName}",
+	"viewOnKeyServer": "在密钥服务器上查看",
+	"copiedToClipboard": "密钥已复制到剪贴板",
+	"failedToCopy": "复制密钥失败"
+}
