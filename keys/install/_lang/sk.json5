@@ -12,5 +12,6 @@
     "downloadKey": "Stiahnuť {keyName}",
     "viewOnKeyServer": "Zobraziť na serveri kľúčov",
     "copiedToClipboard": "Kľúč bol skopírovaný do schránky",
-    "failedToCopy": "Nepodarilo sa skopírovať kľúč"
+    "failedToCopy": "Nepodarilo sa skopírovať kľúč",
+    "backToList": "Späť na zoznam"
 }

@@ -12,5 +12,6 @@
     "downloadKey": "Скачать {keyName}",
     "viewOnKeyServer": "Посмотреть на сервере ключей",
     "copiedToClipboard": "Ключ скопирован в буфер обмена",
-    "failedToCopy": "Не удалось скопировать ключ"
+    "failedToCopy": "Не удалось скопировать ключ",
+    "backToList": "Назад к списку"
 }

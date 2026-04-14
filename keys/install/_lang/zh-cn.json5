@@ -12,5 +12,6 @@
 	"downloadKey": "下载 {keyName}",
 	"viewOnKeyServer": "在密钥服务器上查看",
 	"copiedToClipboard": "密钥已复制到剪贴板",
-	"failedToCopy": "复制密钥失败"
+	"failedToCopy": "复制密钥失败",
+	"backToList": "返回列表"
 }
