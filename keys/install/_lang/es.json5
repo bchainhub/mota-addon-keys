@@ -12,5 +12,6 @@
 	"downloadKey": "Descargar {keyName}",
 	"viewOnKeyServer": "Ver en el servidor de claves",
 	"copiedToClipboard": "Clave copiada al portapapeles",
-	"failedToCopy": "No se pudo copiar la clave"
+	"failedToCopy": "No se pudo copiar la clave",
+	"backToList": "Volver a la lista"
 }

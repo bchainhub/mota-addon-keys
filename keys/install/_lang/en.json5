@@ -12,5 +12,6 @@
 	"downloadKey": "Download {keyName}",
 	"viewOnKeyServer": "View on Key Server",
 	"copiedToClipboard": "Key copied to clipboard",
-	"failedToCopy": "Failed to copy key"
+	"failedToCopy": "Failed to copy key",
+	"backToList": "Back to list"
 }

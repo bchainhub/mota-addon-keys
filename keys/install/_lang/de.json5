@@ -12,5 +12,6 @@
 	"downloadKey": "{keyName} herunterladen",
 	"viewOnKeyServer": "Auf Schlüsselserver anzeigen",
 	"copiedToClipboard": "Schlüssel in die Zwischenablage kopiert",
-	"failedToCopy": "Schlüssel konnte nicht kopiert werden"
+	"failedToCopy": "Schlüssel konnte nicht kopiert werden",
+	"backToList": "Zurück zur Liste"
 }

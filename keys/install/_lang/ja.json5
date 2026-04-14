@@ -12,5 +12,6 @@
 	"downloadKey": "{keyName} をダウンロード",
 	"viewOnKeyServer": "キーサーバーで表示",
 	"copiedToClipboard": "キーをクリップボードにコピーしました",
-	"failedToCopy": "キーのコピーに失敗しました"
+	"failedToCopy": "キーのコピーに失敗しました",
+	"backToList": "一覧に戻る"
 }

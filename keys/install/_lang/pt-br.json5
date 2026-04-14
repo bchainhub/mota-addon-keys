@@ -12,5 +12,6 @@
 	"downloadKey": "Baixar {keyName}",
 	"viewOnKeyServer": "Ver no servidor de chaves",
 	"copiedToClipboard": "Chave copiada para a área de transferência",
-	"failedToCopy": "Falha ao copiar a chave"
+	"failedToCopy": "Falha ao copiar a chave",
+	"backToList": "Voltar à lista"
 }

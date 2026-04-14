@@ -12,5 +12,6 @@
 	"downloadKey": "ดาวน์โหลด {keyName}",
 	"viewOnKeyServer": "ดูบนเซิร์ฟเวอร์คีย์",
 	"copiedToClipboard": "คัดลอกคีย์ไปยังคลิปบอร์ดแล้ว",
-	"failedToCopy": "คัดลอกคีย์ไม่สำเร็จ"
+	"failedToCopy": "คัดลอกคีย์ไม่สำเร็จ",
+	"backToList": "กลับไปที่รายการ"
 }
