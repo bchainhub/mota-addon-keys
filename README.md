@@ -1,6 +1,6 @@
 # Keys registry MOTA addon
 
-Keys registry MOTA addon for SvelteKit projects. Adds a **Keys Registry** route at `/keys` that loads **optional** well-known files: **`signing-keys.json`**, **`oric.json`**, and **`fintag.json`**. Each file is fetched independently; **missing files (404) are ignored** with no error. Invalid JSON or wrong shape adds a **warning** and skips that section. Uses [typesafe-i18n](https://github.com/ivanhofer/typesafe-i18n) for translations: en, sk, ru, de, es, ja, pt-br, th, zh-cn (Simplified Chinese).
+Keys registry MOTA addon for SvelteKit projects. Adds a **Keys Registry** route at `/keys` that loads **optional** well-known files: **`jwks.json`**, **`nostr.json`**, **`oric.json`**, and **`fintag.json`**. Each file is fetched independently; **missing files (404) are ignored** with no error. Invalid JSON or wrong shape adds a **warning** and skips that section. Uses [typesafe-i18n](https://github.com/ivanhofer/typesafe-i18n) for translations: en, sk, ru, de, es, ja, pt-br, th, zh-cn (Simplified Chinese).
 
 **Repository:** [https://github.com/bchainhub/mota-addon-keys](https://github.com/bchainhub/mota-addon-keys)
 
@@ -15,11 +15,12 @@ Keys registry MOTA addon for SvelteKit projects. Adds a **Keys Registry** route 
 
 | File | URL | Purpose |
 | --- | --- | --- |
-| Signing keys | `/.well-known/signing-keys.json` | JOSE/JWK public keys (`issuer` optional, `keys` required array) |
+| Signing keys | `/.well-known/jwks.json` | JOSE/JWK public keys (`issuer` optional, `keys` required array) |
+| Nostr | `/.well-known/nostr.json` | NIP-05 names map (`names` required, `relays` optional) |
 | ORIC | `/.well-known/oric.json` | JSON **array of strings** (ORIC codes) |
 | FinTag | `/.well-known/fintag.json` | JSON **array of objects** (each object has at least one property) |
 
-### `static/.well-known/signing-keys.json`
+### `static/.well-known/jwks.json`
 
 Object with:
 
@@ -27,6 +28,31 @@ Object with:
 - `keys` (array): each object must include `kid`; other JWK fields optional.
 
 Detail hash: `signing--{kid}` (URL-encoded).
+
+### `static/.well-known/nostr.json`
+
+Object with:
+
+- `names` (object, required): maps NIP-05 names to **64-character hex** pubkeys
+- `relays` (object, optional): maps pubkeys to arrays of relay URLs
+
+Example:
+
+```json
+{
+  "names": {
+    "alice": "32e182763c9f32ab4f2246f2211b5e0fca1234567890abcdef1234567890abcd"
+  },
+  "relays": {
+    "32e182763c9f32ab4f2246f2211b5e0fca1234567890abcdef1234567890abcd": [
+      "wss://relay.damus.io",
+      "wss://relay.primal.net"
+    ]
+  }
+}
+```
+
+Detail hash: `nostr--{name}` (URL-encoded).
 
 ### `static/.well-known/oric.json`
 
@@ -66,7 +92,7 @@ npx addon bchainhub/mota-addon-keys keys install --dry-run
 ### What gets added
 
 - **Routes**
-  - `src/routes/[[lang]]/keys/+page.svelte` — fetches the three well-known files in the browser (`onMount`). Missing files are skipped; the registry is not loaded during SSR.
+  - `src/routes/[[lang]]/keys/+page.svelte` — fetches the four well-known files in the browser (`onMount`). Missing files are skipped; the registry is not loaded during SSR.
 - **Translations** — Merged into `src/i18n/<locale>/index.ts` for each bundled locale under `modules.keyRegistry`.
 
 After install, run your i18n step if needed (e.g. `npx typesafe-i18n --no-watch`).
